@@ -38,7 +38,20 @@ a{
 .right{
      gap: 33px;
      display: flex;
+     position: relative;
 }
+.basket_count{
+     width: 19px;
+     height: 19px;
+     background-color: rgb(241, 109, 127);
+     border-radius: 50%;
+     position: absolute;
+     right: -10px;
+     top: -10px;
+     color: white;
+     text-align: center;
+}
+
 .header__main{
      background-color: rgb(241, 228, 230);
      justify-content: space-between;
@@ -86,11 +99,11 @@ line-height: 116%;
      justify-content: center;
      transition: all 0.4s;
 }
-.offer__box:hover{
+/* .offer__box:hover{
      .transparency{
           background-color: rgba(33, 22, 22, 0.0);
      }
-}    
+}     */
 .transparency{
      position: absolute;
      width: 100%;
@@ -147,7 +160,6 @@ line-height: 116%;
      padding-bottom: 24px;
 }
 .products__item{
-     /* position: relative; */
      display: flex;
      flex-wrap: wrap;
      transition: all 0.4s;
@@ -278,6 +290,7 @@ line-height: 116%;
      url("../img/footer/fon.jpeg");
      background-position: bottom;
      background-repeat: no-repeat;
+     background-size: 100%;
 }
 .footer__transparensy{
      position: absolute;
@@ -321,9 +334,8 @@ line-height: 116%;
      padding-bottom: 32px;
 
 }
-.form{}
 .input{
-     width: 280px;
+     width: 226px;
      height: 49px;
      background-color: rgb(225, 225, 225);
      border: 0;
@@ -340,7 +352,7 @@ line-height: 116%;
      font-weight: 400;
      font-size: 14px;
      line-height: 17px;
-     margin-left: -58px;
+     margin-left: -4px;
 }
      
 /* ======================*/
@@ -373,14 +385,13 @@ line-height: 116%;
      color: white;
 }
 .social_img{
-     color: black;
      padding-top: 8px;
 }
 /* =============================================================== */
 /* =============================================================== */
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
      .center{
           max-width: 768px;
      }
@@ -389,6 +400,11 @@ line-height: 116%;
      }
      .basket{
           padding-right: 16px;
+     }
+     .basket_count{
+          right: 6px;
+          top: -10px;
+     
      }
      .header_title{
           font-size: 44px;
@@ -421,8 +437,8 @@ line-height: 116%;
      .footer__top{
           padding-top: 48px;
           padding-bottom: 64px;
-          padding-left: calc(50% - 393px);
-          padding-right: calc(50% - 393px);
+          /* padding-left: calc(50% - 393px);
+          padding-right: calc(50% - 393px); */
           flex-direction: column;
      }
      .footer__main, .footer__transparensy{
@@ -430,7 +446,6 @@ line-height: 116%;
      }
      .footer__main{
           background-image: url("../img/footer/ipad_fon.jpeg");
-          background-size: cover;
           width: 100vw;
           background-position: bottom -80px left -10px;
      }
@@ -446,4 +461,95 @@ line-height: 116%;
      .footer__main_right{
           margin-top: 0;
      }
+}
+@media screen and (max-width: 767px){
+     .center{
+          max-width: 375px;
+     }
+     .padding_center{
+          padding-left: calc(50% - 187.5px);
+          padding-right: calc(50% - 187.5px);
+     }
+     .right{gap: 0;}
+     .basket{display: none;}
+     .header__img{display: none;}
+     .user{display: none;}
+     .basket_count{display: none;}
+
+     .header__main{
+          min-height: 363px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     .header__title{
+          padding-left: 15px;
+          margin-right: 0;
+
+     }
+     .header_title{
+          font-size: 38px;
+     }
+     .subtitle{
+          font-size: 20px;
+     }
+     .main{
+          padding: 0 8px 0 8px;
+     }
+     .products__container{
+          gap: 15.61px;
+          grid-template-columns: 1fr;
+          padding-bottom: 0;
+     }
+     .offer{
+          padding-top: 65px;
+          margin-left: 8px;
+          margin-right: 8px;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+     }
+     .box4img{display: none;}
+     .box4{
+          background-image: url("../img/offer/4_mbl.jpeg");
+          height: 110.76px;
+          margin-top: 0;
+     }
+     .products{
+          margin-top: 64px;
+     }
+     .products__subtitle{
+          padding-bottom: 57.7px;
+     }
+     .products__button{
+          margin: 40.61px auto 96px auto;
+     }
+     .footer__top{
+          padding-top: 48px;
+          padding-bottom: 81px;
+          gap: 46.7px;
+     }
+     .footer__top_item{
+          padding-top: 0;
+          padding-bottom: 0;
+     }
+     .left_text{
+          font-size: 18px;
+     }
+     .right_subtitle{
+          font-size: 14px;
+          padding-bottom: 22.15px;
+     
+     }
+     .footer__main{
+          background-position: center ;
+          background-size: cover;
+     }
+     .footer__bottom{
+          flex-direction: column-reverse;
+          padding-top: 43px;
+          padding-bottom: 9px;
+          gap: 40px;
+     }
+
 }
