@@ -51,11 +51,46 @@ a{
      color: white;
      text-align: center;
 }
+.menu_img:hover  .menu{
+     display: block;
+}
 
 .header__main{
      background-color: rgb(241, 228, 230);
      justify-content: space-between;
+     position: relative;
 }
+.menu{
+     /* display: none; */
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 32px 74px 32px 32px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+     z-index: 4;
+}
+.menu_title{
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 17px;
+     margin-left: 1px;
+     margin-bottom: 24px;
+}
+.menu_item{
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 17px;
+     color: rgb(241, 109, 127);
+     list-style-type: none;
+     margin-top: 20px;
+}
+.menu_list{
+     color: rgb(111, 110, 110);
+     margin-top: 16px;
+     padding-left: 21.5px;
+}
+.menu_link{}
 .header__img{
      width: 35.85%;
 }
@@ -341,6 +376,7 @@ line-height: 116%;
      border: 0;
      border-radius: 24px 0 0 24px;
      padding-left: 25px;
+     outline: none;
 }
 .subscribe_btn{
      background-color: rgb(224, 92, 110);
@@ -375,18 +411,22 @@ line-height: 116%;
 .social_wrop{
 
      width: 31.45px;
-     height: 32px;
+     height: 24px;
      margin-left: 7.29px;
      background-color: #fff;
      text-align: center;
+     padding-top: 8px;
+}
+.social_wrop:nth-child(2){
+     fill: black;
 }
 .social_wrop:hover{
      background-color: rgb(241, 109, 127);
-     color: white;
+     .social_img{
+          fill: #fff;
+     }
 }
-.social_img{
-     padding-top: 8px;
-}
+
 /* =============================================================== */
 /* =============================================================== */
 
