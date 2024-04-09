@@ -85,13 +85,16 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: rgb(241, 109, 127);
-  list-style-type: none;
   margin-top: 20px;
+}
+ul{
+     list-style-type: none;
 }
 .menu_list {
   color: rgb(111, 110, 110);
   margin-top: 16px;
   padding-left: 21.5px;
+  flex-wrap: nowrap;
 }
 .menu_link:hover {
   color: rgb(241, 109, 127);
