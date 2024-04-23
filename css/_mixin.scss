@@ -1,0 +1,14 @@
+ @mixin center() {
+    max-width: $widthSite + 32px;
+    margin: 0 auto;
+    padding: 0 16px 0 16px;
+  }
+  @mixin padding_center() {
+    padding-left: calc(50% - ($widthSite + 32px) / 2);
+    padding-right: calc(50% - ($widthSite + 32px) / 2);
+  }
+  @mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
