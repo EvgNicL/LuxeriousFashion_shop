@@ -226,9 +226,10 @@ ul {
     }
     &__products{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(314px, 370.12px));
         gap: 2.63%;
         padding-bottom: 24px;
+        justify-content: center;
 
         &_container {
             display: flex;
