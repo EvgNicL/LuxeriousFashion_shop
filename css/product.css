@@ -123,6 +123,9 @@ ul {
 
 .main__carusel_img {
   width: 100%;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(234, 234, 234);
+  text-align: center;
 }
 .main__carusel_content {
   max-width: 1172px;
