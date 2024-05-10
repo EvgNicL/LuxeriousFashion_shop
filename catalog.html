@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/product.css" />
     <link rel="stylesheet" href="./css/catalog.css">
   </head>
@@ -108,276 +109,434 @@
 
     <main class="main">
 
+      <div class="main__filterbox ">
 
+          <div class="main__filterbox_dropdown">
+            <details class="details1">
+              <summary class="main__filterbox_filter">FILTER  
+                <span class="spanfilter"><svg width="15.000000" height="10.000000" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs/>
+                <path id="Vector2" class="main__filterbox_filter-svg" d="M0.83 10L4.16 10C4.62 10 5 9.62 5 9.16C5 8.7 4.62 8.33 4.16 8.33L0.83 8.33C0.37 8.33 0 8.7 0 9.16C0 9.62 0.37 10 0.83 10ZM0 0.83C0 1.29 0.37 1.66 0.83 1.66L14.16 1.66C14.62 1.66 15 1.29 15 0.83C15 0.37 14.62 0 14.16 0L0.83 0C0.37 0 0 0.37 0 0.83ZM0.83 5.83L9.16 5.83C9.62 5.83 10 5.45 10 5C10 4.54 9.62 4.16 9.16 4.16L0.83 4.16C0.37 4.16 0 4.54 0 5C0 5.45 0.37 5.83 0.83 5.83Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </svg></span>
+              </summary>
 
-        <div class="main__products center">
-
-
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/4.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
+              <details class="details">
+              <summary class="main__filterbox_dropdown_item">CATEGORY</summary>
+                <a href="#" class="main__filterbox_dropdown_item-link">Accessories</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Bags</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Denim</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Hoodies & Sweatshirts</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Jackets & Coats</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Polos</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Shirts</a>
+                <a href="" class="main__filterbox_dropdown_item-link">Shoes</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Sweaters & Knits</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">T-Shirts</a>
+                <a href="#" class="main__filterbox_dropdown_item-link">Tanks</a>
+              
+              </details>
+              <details class="details">
+              <summary class="main__filterbox_dropdown_item">BRAND</summary>
+              </details>
+              <details class="details">
+              <summary class="main__filterbox_dropdown_item">DESIGNER</summary>
+              </details>
+            
+            </details> 
           </div>
 
-
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/3.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
+          <div class="main__filterbox_sort">
+            
+            <div class="main__filterbox_sort-box">
+              
+                <div class="main__filterbox_sort-item trend">TRENDING NOW
+                  <span class="main__filterbox_sort-item-ar">
+                    <svg width="11.000000" height="6.000000" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                    <path id="Vector" d="M5 5C4.83 5 4.67 4.94 4.54 4.83L0.25 1.26C0.11 1.14 0.02 0.96 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.25C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.36L8.83 0.27C8.9 0.22 8.98 0.17 9.07 0.14C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.54 9.98 0.63C10.01 0.73 10.02 0.83 10.01 0.93C10 1.02 9.97 1.12 9.92 1.2C9.88 1.29 9.81 1.37 9.73 1.42L5.45 4.88C5.32 4.97 5.16 5.01 5 5Z" fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </svg>
+                  </span>
+                </div> 
+            </div>
+            <div class="main__filterbox_sort-box">
+              <div class="main__filterbox_sort-item size">SIZE 
+              <span class="main__filterbox_sort-item-ar">
+                <svg width="11.000000" height="6.000000" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs/>
+                <path id="Vector" d="M5 5C4.83 5 4.67 4.94 4.54 4.83L0.25 1.26C0.11 1.14 0.02 0.96 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.25C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.36L8.83 0.27C8.9 0.22 8.98 0.17 9.07 0.14C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.54 9.98 0.63C10.01 0.73 10.02 0.83 10.01 0.93C10 1.02 9.97 1.12 9.92 1.2C9.88 1.29 9.81 1.37 9.73 1.42L5.45 4.88C5.32 4.97 5.16 5.01 5 5Z" fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </svg>
+              </span>
               </div>
             </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
-          </div>
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/6.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
+            <div class="main__filterbox_sort-box">
+              <div class="main__filterbox_sort-item price">PRICE
+              <span class="main__filterbox_sort-item-ar">
+                <svg width="11.000000" height="6.000000" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs/>
+                <path id="Vector" d="M5 5C4.83 5 4.67 4.94 4.54 4.83L0.25 1.26C0.11 1.14 0.02 0.96 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.25C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.36L8.83 0.27C8.9 0.22 8.98 0.17 9.07 0.14C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.54 9.98 0.63C10.01 0.73 10.02 0.83 10.01 0.93C10 1.02 9.97 1.12 9.92 1.2C9.88 1.29 9.81 1.37 9.73 1.42L5.45 4.88C5.32 4.97 5.16 5.01 5 5Z" fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </svg>
+              </span>
               </div>
             </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
-          </div>
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/4.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
+            
           </div>
 
-
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/3.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
-          </div>
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/6.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
-          </div>
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/4.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
-          </div>
+      </div>
 
 
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/3.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
+      <div class="main__products center">
+
+          
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/1.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
             </div>
           </div>
-          <div class="main__products_container">
-            <div class="producta__img_box">
-              <img
-                src="./img/products/6.jpeg"
-                alt="image"
-                class="products__img"
-              />
-              <div class="hover">
-                <a href="#" class="hover_btn">
-                  <img
-                    src="./img/products/hover_icon.svg"
-                    alt="icon"
-                    class="hover_icon"
-                  />
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div class="products__content">
-              <h4 class="products__name">ELLERY X M'O CAPSULE</h4>
-              <p class="products__description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="products__price">$52.00</p>
-            </div>
-          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
         </div>
-      </section>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/7.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/3.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/4.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/8.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/9.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/10.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/11.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+        <div class="main__products_container">
+          <div class="main__products_container_imgbox">
+            <img
+              src="./img/products/12.jpeg"
+              alt="image"
+              class="main__products_container_imgbox_img"
+            />
+            <div class="main__products_container_imgbox_hover">
+              <a href="#" class="main__products_container_imgbox_hoverbtn">
+                <img
+                  src="./img/products/hover_icon.svg"
+                  alt="icon"
+                  class="hover_icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <a href="#" class="main__products_container_content">
+            <h4 class="main__products_container_content_name">ELLERY X M'O CAPSULE</h4>
+            <p class="main__products_container_content_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.
+            </p>
+            <p class="main__products_container_content_price">$52.00</p>
+          </a>
+        </div>
+
+      </div>
+
+      <nav class="main__nav">
+        <ul class="main__nav_pagination">
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              <img src="./img/products/arrLeft.svg" alt="arrLeft">
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="./catalog.html" class="main__nav_pagination_page-link">
+              1
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              2
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              3
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              4
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              5
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              6
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            
+              ....
+            
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="#" class="main__nav_pagination_page-link">
+              20
+            </a>
+          </li>
+          <li class="main__nav_pagination_page-item">
+            <a href="" class="main__nav_pagination_page-link">
+              <img src="./img/products/arrRight.svg" alt="arrRight">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
     </main>
 
     </main>
 
     <footer class="footer">
+
+      <section class="footer__top">
+        <div class="footer__top_item">
+          <img src="./img/footer/icon1.svg" alt="icon" class="footer__top_icon1" />
+          <h4 class="footer__top_title">Free Delivery</h4>
+          <p class="footer__top_text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="footer__top_item">
+          <img src="./img/footer/icon2.svg" alt="icon" class="footer__top_icon2" />
+          <h4 class="footer__top_title">Sales & discounts</h4>
+          <p class="footer__top_text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="footer__top_item">
+          <img src="./img/footer/icon3.svg" alt="icon" class="footer__top_icon3" />
+          <h4 class="footer__top_title">Quality assurance</h4>
+          <p class="footer__top_text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+      </section>
 
       <section class="footer__main">
         <div class="footer__main_transparensy">

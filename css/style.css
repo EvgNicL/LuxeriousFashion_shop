@@ -85,6 +85,7 @@ ul {
   line-height: 17px;
   color: rgb(241, 109, 127);
   margin-top: 20px;
+  cursor: pointer;
 }
 .header__top_right .dropdown .menu .menu_list {
   color: rgb(111, 110, 110);
