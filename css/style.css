@@ -30,6 +30,14 @@ ul {
   align-items: center;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
 .header__top {
   background-color: rgb(34, 34, 34);
   min-height: 57px;
@@ -38,6 +46,16 @@ ul {
 .header__top_left {
   gap: 41px;
   display: flex;
+}
+.header__top_left .loupe, .header__top_left .logo {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header__top_left .loupe:hover {
+  transform: scale(1.15);
+}
+.header__top_left .logo:hover {
+  transform: scale(1.08);
 }
 .header__top_right {
   gap: 33px;
@@ -58,6 +76,9 @@ ul {
 .header__top_right .dropdown {
   display: flex;
   position: relative;
+}
+.header__top_right .dropdown .menu_img {
+  cursor: pointer;
 }
 .header__top_right .dropdown .menu {
   opacity: 0;
@@ -399,6 +420,7 @@ ul {
   font-size: 14px;
   line-height: 17px;
   margin-left: -4px;
+  cursor: pointer;
 }
 .footer__bottom {
   display: flex;

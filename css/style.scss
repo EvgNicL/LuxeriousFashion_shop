@@ -29,6 +29,14 @@ ul {
     @include flex();
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
 // ===
 .header__top {
     background-color: rgb(34, 34, 34);
@@ -38,12 +46,27 @@ ul {
     &_left {
         gap: 41px;
         display: flex;
+
+        .loupe,
+        .logo {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .loupe:hover {
+            transform: scale(1.15);
+        }
+
+        .logo:hover {
+            transform: scale(1.08);
+        }
     }
 
     &_right {
         gap: 33px;
         display: flex;
         position: relative;
+
 
         .basket_count {
             width: 19px;
@@ -61,6 +84,10 @@ ul {
             display: flex;
             position: relative;
 
+            .menu_img {
+                cursor: pointer;
+            }
+
             .menu {
                 opacity: 0;
                 visibility: hidden;
@@ -73,6 +100,7 @@ ul {
                 box-shadow: $shadow;
                 z-index: 4;
                 transition: all 0.5s;
+
 
                 .menu_title {
                     font-weight: 700;
@@ -446,15 +474,18 @@ ul {
                 font-size: 14px;
                 line-height: 17px;
                 margin-left: -4px;
+                cursor: pointer;
             }
 
         }
     }
+
     &__bottom {
         @include flex();
         @include padding_center();
         height: 79px;
         background-color: $colorDark;
+
         &_copyright {
             font-weight: 400;
             font-size: 16px;
@@ -462,11 +493,13 @@ ul {
             color: $colorWhite;
             display: block;
             margin-left: 16px;
-          }
-          &_social {
+        }
+
+        &_social {
             @include flex();
             width: 148px;
             margin-right: 16px;
+
             .social_wrop {
                 width: 31.45px;
                 height: 24px;
@@ -474,16 +507,19 @@ ul {
                 background-color: $colorWhite;
                 text-align: center;
                 padding-top: 8px;
-              }
-              .social_wrop:nth-child(2) {
+            }
+
+            .social_wrop:nth-child(2) {
                 fill: black;
-              }
-              .social_wrop:hover {
+            }
+
+            .social_wrop:hover {
                 background-color: $colorRed;
+
                 .social_img {
-                  fill: $colorWhite;
+                    fill: $colorWhite;
                 }
-              }
-          }
-      }
+            }
+        }
+    }
 }
