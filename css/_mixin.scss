@@ -27,23 +27,27 @@
    transition: all 0.3s;
    cursor: pointer;
  }
- @mixin buttonGreyHover(){
-  color: $colorRed23991112;
-  border: 1px solid $colorRed23991112;
+
+ @mixin buttonGreyHover() {
+   color: $colorRed23991112;
+   border: 1px solid $colorRed23991112;
  }
+
  @mixin buttonRed() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  transition: all 0.3s;
-  width: 273px;
-  color: $colorWhite;
-  background-color: $colorRed;
-  outline: none;
-  border: 0;
-  cursor: pointer;
-}
-@mixin buttonRedHover() {
-  transform: scale(1.03);
-}
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   transition: all 0.3s;
+   width: 273px;
+   color: $colorWhite;
+   background-color: $colorRed;
+   outline: none;
+   border: 0;
+   cursor: pointer;
+ }
+
+ @mixin buttonRedHover() {
+   transform: scale(1.03);
+ }
+
