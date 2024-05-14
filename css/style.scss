@@ -251,7 +251,7 @@ ul {
 
         &_container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(314px, 370.12px));
+            grid-template-columns: repeat(auto-fill, minmax(314px, 360px));
             gap: 2.63%;
             padding-bottom: 24px;
             justify-content: center;
@@ -527,4 +527,74 @@ ul {
             }
         }
     }
+}
+
+
+
+// ======================================================
+
+@media (max-width: 768px){
+
+    .header__main{
+        &_img{
+            width: 24.27vw;
+            margin-left: 80px;
+        }
+        &_title{
+            max-width: 311px;
+            margin-right: 4.17vw;
+            .header_title{
+                font-size: 2.75rem;
+            }
+            .subtitle{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .main{
+        &__offer{
+            gap: 2.56vw;
+            .box4{
+                margin-top: 0;
+            }
+        }
+        &__products{
+            margin-top: 155px;
+            &_subtitle{
+                padding-bottom: 72.7px;
+            }
+
+            &_container{
+                gap: 2.08vw;
+            }
+            &_button{
+                margin-top: 32.5px;
+                margin-bottom: 64.5px;
+            }
+        }
+    }
+    .footer{
+        &__top{
+            flex-direction: column;
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+        &__main{
+            height: 693px;
+            background-image: url(../img/footer/ipad_fon.jpeg);
+            &_transparensy{
+                min-height: 0;
+                height: 100%;
+            }
+            &_container{
+                flex-direction: column;
+            }
+            &_left{
+                margin-top: 64px;
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    
 }
