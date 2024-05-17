@@ -89,6 +89,9 @@
   font-weight: 700;
 }
 
+.main__carusel .img {
+  width: 50.94%;
+}
 .main__carusel_img {
   width: 100%;
   background-color: rgb(247, 247, 247);
@@ -106,6 +109,11 @@
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main__carusel_img .arbox:hover {
+  transform: scale(1.03);
 }
 .main__carusel_img_arleft {
   left: 0;
@@ -114,7 +122,7 @@
   right: 0;
 }
 .main__carusel_content {
-  max-width: 1172px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 16px 0 16px;
   text-align: center;
@@ -204,8 +212,8 @@
 }
 .main__products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(314px, 370.12px));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(314px, 360px));
+  gap: 2.6%;
   padding-bottom: 24px;
   justify-content: center;
   margin-top: 128px;
@@ -279,118 +287,45 @@
   padding-top: 16px;
 }
 
-.footer__main {
-  min-height: 448px;
-  max-height: 614px;
-  background-image: url("../img/footer/fon.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 1200px) {
+  .main__carusel_img .arbox {
+    top: 315px;
+  }
+  .main__carusel_content {
+    margin-top: -40px;
+  }
 }
-.footer__main_transparensy {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  min-height: 448px;
-  max-height: 614px;
-  background-color: rgba(244, 244, 244, 0.7);
+@media (max-width: 1040px) {
+  .main__carusel_img .arbox {
+    top: 285px;
+  }
+  .main__carusel_content {
+    margin-top: -30px;
+  }
 }
-.footer__main_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: calc(50% - 586px);
-  padding-right: calc(50% - 586px);
-  justify-content: space-around;
+@media (max-width: 900px) {
+  .main__carusel_img .img {
+    width: 466px;
+    margin-top: 20px;
+  }
+  .main__carusel_img .arbox {
+    top: 245px;
+  }
+  .main__carusel_content {
+    margin-top: 0;
+  }
 }
-.footer__main_left {
-  margin-top: 97px;
-  margin-bottom: 126px;
-  text-align: center;
-}
-.footer__main_left .left_text {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  font-weight: 400;
-  font-size: 20px;
-  color: rgb(34, 34, 36);
-  max-width: 359.45px;
-}
-.footer__main_right {
-  color: rgb(34, 34, 36);
-  text-align: center;
-  margin-top: 53px;
-}
-.footer__main_right .right_title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 2px;
-  padding-bottom: 32px;
-}
-.footer__main_right .right_subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 2px;
-  padding-bottom: 32px;
-}
-.footer__main_right .input {
-  width: 226px;
-  height: 49px;
-  background-color: white;
-  border: 0;
-  border-radius: 24px 0 0 24px;
-  padding-left: 25px;
-  outline: none;
-}
-.footer__main_right .subscribe_btn {
-  background-color: rgb(224, 92, 110);
-  width: 100px;
-  height: 49px;
-  border-radius: 0 24px 24px 0;
-  border: 0;
-  color: white;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  margin-left: -4px;
-}
-.footer__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: calc(50% - 586px);
-  padding-right: calc(50% - 586px);
-  height: 79px;
-  background-color: rgb(34, 34, 36);
-}
-.footer__bottom_copyright {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: white;
-  display: block;
-  margin-left: 16px;
-}
-.footer__bottom_social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 148px;
-  margin-right: 16px;
-}
-.footer__bottom_social .social_wrop {
-  width: 31.45px;
-  height: 24px;
-  margin-left: 7.29px;
-  background-color: white;
-  text-align: center;
-  padding-top: 8px;
-}
-.footer__bottom_social .social_wrop:nth-child(2) {
-  fill: black;
-}
-.footer__bottom_social .social_wrop:hover {
-  background-color: rgb(241, 109, 127);
-}
-.footer__bottom_social .social_wrop:hover .social_img {
-  fill: white;
+@media (max-width: 768px) {
+  .main__carusel_img {
+    height: 624px;
+  }
+  .main__carusel_img .arbox {
+    top: 288px;
+  }
+  .main__products {
+    gap: 16px;
+  }
+  .main__products:nth-last-child(2n+1) {
+    display: none;
+  }
 }/*# sourceMappingURL=product.css.map */

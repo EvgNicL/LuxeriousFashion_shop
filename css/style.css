@@ -22,7 +22,7 @@ ul {
 }
 
 .center {
-  max-width: 1172px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 16px 0 16px;
   display: flex;
@@ -62,6 +62,7 @@ ul {
   gap: 33px;
   display: flex;
   position: relative;
+  margin-right: 16px;
 }
 .header__top_right .basket_count {
   width: 19px;

@@ -62,11 +62,9 @@
   color: rgb(239, 91, 112);
 }
 .main__filterbox_sort {
-  position: absolute;
   z-index: 5;
-  left: 478px;
-  display: flex;
-  margin-left: 270px;
+  display: inline-flex;
+  margin-left: 409px;
 }
 .main__filterbox_sort-item {
   font-weight: 400;

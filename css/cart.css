@@ -34,7 +34,6 @@
 }
 .main__cards_container-content {
   width: 330px;
-  min-width: 154px;
   padding-left: 31px;
   padding-top: 22px;
   padding-right: 20px;
@@ -209,4 +208,10 @@
 }
 .main__execution_total-button:hover {
   transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .main__cards_container-content {
+    width: 734px;
+  }
 }/*# sourceMappingURL=cart.css.map */

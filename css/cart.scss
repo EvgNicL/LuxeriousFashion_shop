@@ -42,7 +42,6 @@
 
             &-content {
                 width: 330px;
-                min-width: 154px;
                 padding-left: 31px;
                 padding-top: 22px;
                 padding-right: 20px;
@@ -204,5 +203,13 @@
             }
         }
         
+    }
+}
+
+
+// ==============================
+@media (max-width: 768px){
+    .main__cards_container-content{
+        width: 734px;
     }
 }
